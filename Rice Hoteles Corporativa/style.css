@@ -40,20 +40,21 @@ Author: Mirai Espana
 }
 
 body {font-family: GothamNarrow-Light; font-size: 15px;}
-strong {font-family: GothamNarrow-Medium;}
+strong, #cookies-wrapper-content h1 {
+  font-family: GothamNarrow-Medium;
+  font-weight: normal;
+}
 
 /*---------------------------- GENERIC STYLES -------------------------------*/
-h1 {}
-h2 {}
-h3 {}
-h4 {}
 
-h2, h3, h4 {}
+a {color: #AB9A5E;}
 
-a {}
 a:hover {text-decoration:underline;}
 
-#header {background: url("/files/bgHeader.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);min-height: 54px;}
+#header {
+  background: url("/files/bg_header.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+  height: 700px;
+}
 #header .content {}
 
 #main {}
@@ -64,59 +65,48 @@ a:hover {text-decoration:underline;}
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.height1 {height: 440px;}
 .mrg1 {margin: 15px 0 0;}
-.mrg2 {margin: 60px 0 0;}
+.mrg2 {margin: 50px 0 0;}
+.mrg3 {margin: 0 0 15px 0;}
 .pad1 {padding: 30px 0 20px;}
 .pad2 {padding: 40px 0 50px;}
-.pad3 {padding: 0 0 50px;}
+.pad3 {padding: 20px 0 50px;}
 .mrgright {margin-right: 5%;}
 .mrgleft {margin-left: 5%;}
 .mrgcenter {margin: 0 2.5%;}
-.padright {padding-right: 5%;}
-.padleft {padding-left: 5%;}
-.padcenter {padding: 0 2.5%;}
-h2 {
-  font-size: 1.8em;
-  margin: 0 0 28px;
-}
+.padright {padding-right: 1%;}
+.padleft {padding-left: 1%;}
+.padcenter {padding: 0 0.5%;}
+
+h2 {font-size: 1.8em;}
+.medium, h2, h3, h4 {font-family: GothamNarrow-Light;}
 h3 {
-  border-bottom: 4px solid #b19e64;
-  color: #000;
-  display: inline-block;
-  font-size: 1.1em;
-  line-height: 24px;
-  margin-bottom: 20px;
+  border-bottom: 1px solid;
+  font-size: 1em;
+  line-height: 18px;
+  margin: 15px 0 20px;
+  padding-bottom: 0;
   text-transform: uppercase;
 }
-.content-page h3:after, .box-footer h3:after {
-  border-bottom: 1px solid #000;
-  content: "";
-  display: block;
-  height: 3px;
-  margin-top: -4px;
-  position: absolute;
+#main .content h3 span, .box-footer h3 span {
+  border-bottom: 4px solid #ab9a5e;
+  display: inline-block;
+  margin-bottom: -5px;
+  padding-bottom: 5px;
 }
-.content-page .span4 h3:after, .bgcolor .span4 h3:after, #footer .span4 h3:after {width: 85%;}
-.content-page .span8 h3:after, .bgcolor .span8 h3:after {width: 92%;}
-.content-carousel h3:after {width: 100%;}
-
-
 .bgcolor {background-color: #231f20;}
-.bgcolor .content-page h2, .bgcolor .content-page h3, .bgcolor .box-home p, .box-footer h3, .box-footer p {color: #fff}
-.bgcolor .content-page h3:after, .box-footer h3:after {border-bottom: 1px solid #fff;}
+.bgcolor h2, .bgcolor h3, .bgcolor .box-home p, .box-footer h3, .box-footer p {color: #fff}
 .box-footer h3 {margin-bottom: 37px;}
-.bgcolor .box-home p {color: #ccc}
-h3.special-title {font-size: 11px;}
-.content-page h3:before {}
-.box-home p {color: #777;}
+.bgcolor p {color: #999;}
+h3.special-title {font-size: 12px;}
 p.subtitle-h3 {color: #000;font-size: 16px;}
 p.subtitle-h2 {
   color: #b19e64;
   font-size: 21px;
-  margin-top: -30px !important;
 }
-.box-home img {margin: 0 0 16px;}
+.row .span4 a img {margin-bottom: 10px;}
+#hotels a, #restaurants a, #spaces a, #services a {color: inherit; display: block;}
+.row a:hover {text-decoration: none;}
 #footer {background: none repeat scroll 0 0 #231f20;}
 #footer .content {padding: 30px 0;}
 #footer .social-links {}
@@ -136,68 +126,57 @@ p.subtitle-h2 {
   padding-top: 5px;
 }
 
-.box-events {display: flex !important;}
-.box-events div {margin: auto auto;}
-.box-events ul li {
-  font-size: 1.3em;
-  line-height: 1.4;
-}
-.box-events a img {border: 3px solid #fff;}
-.box-events a img:hover {border: 3px solid #B19E64;}
-
-.asterisk {color: #FC7D7B;}
-div.wpcf7-response-output {
-  bottom: 0;
-  position: absolute;
-}
-
-
-
-
-/* SERVICIOS */
-
-.boxes .box {
-  overflow: hidden;
-}
-body.cat-services .boxes .box {background-color: #b19e64;}
-.boxes .box p {color: #222;}
-.boxes .box .wrapper {padding: 9% 4%;}
-.boxes .box .wrapper h3 {
-  color: #fff;
-  font-size: 1.6em;
-  line-height: 20px;
-  text-align: center;
-}
-
-.boxes .box .wrapperimg {}
-.boxes .box .wrapperimg img {width: 100%;}
-
-
-
 /* Cuando en bootstrap el contenido es container, posicion relativa para los elementos en absoluta */
-#header .content, #main .content, #footer .content, .box-home, .content-carousel, .box-footer {position: relative;}
+#header .content, #main .content, #footer .content, .box-home, .content-carousel, .box-footer, #weddings div, #companies div  {position: relative;}
 
 /*------------------------------------------------------------------------------*/
 
 
 /*------------------------------------ LOGO ------------------------------------*/
-#logo {}
+#logo:hover, #logo a:hover, .bookingstep1 #logo:hover, .bookingstep1 #logo a:hover, .bookingstep1 #logo a {text-decoration: none !important;}
+#logo a span {
+  color: #888;
+  display: block !important;
+  font-family: GothamNarrow-Light !important;
+  font-size: 22px;
+  font-weight: 100 !important;
+  margin: -25px 0 0;
+  text-align: center;
+  text-decoration: none !important;
+  width: 280px;
+}
+#logo a span:hover, .bookingstep1 #logo a span:hover {text-decoration: none !important; cursor: default;}
+
 /*------------------------------------------------------------------------------*/
 
 
 /*--------------------------------- QTRANSLATE ---------------------------------*/
-.widget_qtranslate ul li a {color: #fff;}
-.widget_qtranslate {margin-top: 22px;text-align: left;}
+.widget_qtranslate {text-align: right;}
+.widget_qtranslate h3 {}
+.widget_qtranslate ul {border-left: 1px solid;}
+.widget_qtranslate ul li {}
+.widget_qtranslate ul li:first-child {}
+.widget_qtranslate ul li.last-child {}
+.widget_qtranslate ul li a {margin-left: 8px;}
+.widget_qtranslate ul li a:hover {}
+.widget_qtranslate ul li.active a {color: #AD9D65;}
+.widget_qtranslate ul li.active a,
+.widget_qtranslate ul li.current-menu-item a {}
+.widget_qtranslate ul li.active a {}
+.widget_qtranslate ul li.current-menu-item a:hover,
+.widget_qtranslate ul li.active a:hover {}
+.widget_qtranslate ul li.active a:hover {}
+
 .widget_qtranslate select {width: 100px;}
-.widget_qtranslate ul li {display: inline-block;margin: 0 10px;}
-.widget_qtranslate ul li.active, .widget_qtranslate ul li a:hover {text-decoration: underline; color: #fff;}
+
+.widget_qtranslate ul li {display: inline-block;}
+.widget_qtranslate ul li.active {}
 
 /*------------------------------------------------------------------------------*/
 
 
 /*-------------------------------- MENU-NAV-WEB --------------------------------*/
 ul#menu_web {
-  margin-top: 11px;
   text-align: right;
 }
 ul#menu_web li {
@@ -206,12 +185,11 @@ ul#menu_web li {
   position: relative;
 }
 ul#menu_web li a, .bookingstep1 ul#menu_web li a {
-  color: #000;
-  font-size: 13px;
-  padding: 13px 0 0;
+  border-top: 4px solid transparent;
+  padding: 15px 0 0;
   text-transform: uppercase;
 }
-ul#menu_web > li > a:hover, ul#menu_web > li.current-menu-item > a, ul#menu_web > li.current-menu-parent > a, .bookingstep1 ul#menu_web li a:hover {border-top: 4px solid #b3a065;}
+ul#menu_web > li > a:hover, ul#menu_web > li.current-menu-item > a, ul#menu_web > li.current-menu-parent > a, .bookingstep1 ul#menu_web li a:hover {border-color: #b3a065;}
 
 ul#menu_aux1 {}
 ul#menu_aux1 li {margin: 0 0 5px;}
@@ -245,10 +223,7 @@ ul#menu_web > li ul.sub-menu li.current-menu-parent a {
 ul#menu_web > li ul.sub-menu li a {text-shadow: 1px 1px 1px #FFFFFF;}
 
 
-
-
 /*------------------------------------------------------------------------------*/
-
 
 /*-------------------------------  GOOGLE MAPS ---------------------------------*/
 .mapa {margin: 10px 0;}
@@ -271,26 +246,31 @@ ul#menu_web > li ul.sub-menu li a {text-shadow: 1px 1px 1px #FFFFFF;}
 
 /*-------------------------  MOTOR MASHUP CALENDAR -----------------------------*/
 /* OJO!!!!! acordaos de revisar los botones de prev/next del calendar */
+/*-------------------------  MOTOR MASHUP CALENDAR -----------------------------*/
+/* OJO!!!!! acordaos de revisar los botones de prev/next del calendar */
 .ui-datepicker .ui-datepicker-header,
 .ui-datepicker .ui-datepicker-buttonpane button,
-.ui-datepicker td:hover a {}
+.ui-datepicker td:hover a {
+	background: #AB9A5E;
+    color: #fff;
+}
+
 #ui-datepicker-div {font-size: 14px !important;}
+#engine-tracking-link-wrapper {display: none;}
 /*------------------------------------------------------------------------------*/
 
 
 /*------------------------------  NEW MOTOR MASHUP ---------------------------------*/
 /*propias del sitio*/
 .engine_mashup {
-  background: none repeat scroll 0 0 #b19e64;
-  margin: 384px 0 40px;
-  padding-bottom: 9px;
-  position: relative;
+  background: none repeat scroll 0 0 #171213;
+  border-bottom: 10px solid #ab9a5e;
+  margin-bottom: 30px;
+  margin-top: -55px;
+  padding: 15px 0;
   z-index: 1;
 }
-.engine_mashup > div {
-  background: none repeat scroll 0 0 #000;
-  padding: 4px 0;
-}
+.engine_mashup > div {}
 .engine_mashup.inline.one-row > div form .button-group a {
   color: #fff;
   font-size: 13px;
@@ -301,50 +281,81 @@ ul#menu_web > li ul.sub-menu li a {text-shadow: 1px 1px 1px #FFFFFF;}
   margin: 0 3px 0 0;
   vertical-align: top;
 }
-.engine_mashup > div form .control-group select.selector {width: 130px;}
+.engine_mashup > div form .control-group select.selector {width: 140px;}
+
+.engine_mashup > div form .control-group select, .engine_mashup > div form .control-group input[type="text"], .wpcf7-form-control.wpcf7-email {border-radius: 0; padding: 4px 5px;}
+#footer .wpcf7-form-control.wpcf7-email {width: 96%;}
 
 /* BOTONES RESERVAR Y ENVIAR (formularios, blog...) */
-.engine_mashup > div form .button-group input[type="submit"],
 .mapa .formRuta input.calculaRuta, #mirai_be7 input,
 #respond .form-submit #submit,
 .wpcf7 .wpcf7-form input.wpcf7-submit,
-.offers-mashup .more-info-link {
-    background: none repeat scroll 0 0 #000;
+.offers-mashup .more-info-link, .link,
+div#mirai_chainHotelsContainer .bt_book {
+    background: none repeat scroll 0 0 #b19e64;
     border-radius: 0 !important;
     box-shadow: 0 0 !important;
     border: 0 none;
-    color: #fff;
-    padding: 3px 20px;
+    color: #fff !important;
+    padding: 10px 20px;
     text-shadow: 0 0 !important;
 }
-.engine_mashup > div form .button-group input[type="submit"]:hover,
 .mapa .formRuta input.calculaRuta:hover, #mirai_be7 input:hover,
 #respond .form-submit #submit:hover,
 .wpcf7 .wpcf7-form input.wpcf7-submit:hover,
-.offers-mashup .more-info-link:hover {
-    background: none repeat scroll 0 0 #474746;
+.offers-mashup .more-info-link:hover, .link:hover,
+div#mirai_chainHotelsContainer .bt_book:hover {
+    color: #000 !important;
 }
-.offers-mashup .more-info-link {}
+.offers-mashup .more-info-link {display: inline-block !important;}
 span.wpcf7-list-item {
   display: block;
   margin-left: 0;
   margin-top: 13px !important;
   position: relative;
 }
-.checkbox-168 .wpcf7-list-item-label {
-  font-size: 17px;
-  color: #ccc;
+span.wpcf7-list-item input {
+  margin: -3px 3px 0 0;
 }
-#footer .wpcf7 .wpcf7-form input.wpcf7-submit {
-  background: none repeat scroll 0 0 #ddd;
-  border: 0 none;
-  color: #666 !important;
-  margin: -34px 0 0;
-  padding: 3px 11px;
-  position: absolute;
-  right: 66px;
+#footer .wpcf7-submit {
+  float: right;
+  font-size: 16px;
+  margin-top: -35px;
+  padding: 5px 12px;
+  position: relative;
+  z-index: 1;
 }
+/*
 #footer .wpcf7 .wpcf7-form input.wpcf7-submit:hover {background: none repeat scroll 0 0 #A8A6A6;}
+*/
+#menu_footer {
+  font-size: 1em;
+  text-align: right;
+  text-transform: none;
+}
+#copyright-wrapper, #menu_footer {
+  border-top: 1px solid;
+  color: #fff;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+#menu_footer li {
+  display: inline-block;
+  margin-left: 20px;
+}
+#menu_footer li a {
+  text-transform: none;
+  color: #ad9d65;
+}
+#menu_footer li a:hover {
+  color: #ad9d65;
+}
+.link {
+    display: block;
+    float: none;
+    margin: 30px 0 0 !important;
+    position: relative;
+}
 
 /*.wpcf7-form-control-wrap.your-email input {width: 95%;}*/
 .wpcf7-response-output {background: #ccc;}
@@ -371,12 +382,12 @@ span.wpcf7-not-valid-tip {color: #222;}
     border-radius: 0;
     box-shadow: 0 0;
     color: #fff;
-    margin-top: 2em;
+    font-size: 1.1em;
+    padding: 4px 17px;
+    /*margin-top: 2em;*/
     text-shadow: 0 0;
 }
-.engine_mashup > div form .button-group input[type=submit]:hover, .bookingstep1 #motor_reservas #mirai_bookentrance #mirai_be7 input:hover {
-    background: none repeat scroll 0 0 #897844;
-}
+.engine_mashup > div form .button-group input[type=submit]:hover, .bookingstep1 #motor_reservas #mirai_bookentrance #mirai_be7 input:hover {color: #000;}
 /* ----- */
 .engine_mashup > div form .button-group .icon-lock {margin: 3px 2px 0 0;}
 
@@ -406,36 +417,6 @@ span.wpcf7-not-valid-tip {color: #222;}
 
 /*------------------------------------------------------------------------------*/
 
-/*------------------------------  BACK TOP ---------------------------------*/
-
-#back-top, .box-offers .hotel-offers h4 a {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-#back-top {
-  background: url("/files/back_top.png") no-repeat scroll center -146px #ccc;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  bottom: 80px;
-  color: #fff;
-  display: none;
-  height: 50px;
-  opacity: 0.8;
-  padding: 5px 5px 10px;
-  position: fixed;
-  right: 10px;
-  text-align: center;
-  width: 60px;
-  z-index: 10;
-}
-#back-top:hover {
-    opacity:1;
-}
-
 /*------------------------------  OFFERS PAGES ---------------------------------*/
 #offersHs #headerOffers {display: none;}
 #offersHs .rowOffers {
@@ -451,13 +432,14 @@ span.wpcf7-not-valid-tip {color: #222;}
 #offersHs ul, #offersHs .rowOffers > p {padding: 15px 20px;}
 
 .offers-mashup h3 {
+  border-bottom: 4px solid #ab9a5e;
   display: inline-block !important;
   float: none;
-  margin: 0 auto 20px !important;
+  margin: 15px auto 20px !important;
+  padding-bottom: 4px;
   position: relative;
   text-align: center !important;
 }
-.offers-mashup h3:after {display: none;}
 .offers-mashup {
   display: block;
   text-align: center;
@@ -483,21 +465,30 @@ span.wpcf7-not-valid-tip {color: #222;}
   position: relative;
   width: 48%;
 }
+#hotels .hotel-offers {
+  height: 148px;
+  margin: 58px 1%;
+  position: relative;
+  width: 100%;
+}
 .box-offers .hotel-offer1 {background: url("/files/bulevar.jpg") repeat scroll center center rgba(0, 0, 0, 0);}
 .box-offers .hotel-offer2 {background: url("/files/blasones.jpg") repeat scroll center center rgba(0, 0, 0, 0);}
 .box-offers .hotel-offer3 {background: url("/files/marialuisa.jpg") repeat scroll center center rgba(0, 0, 0, 0);}
 .box-offers .hotel-offer4 {background: url("/files/catolicos.jpg") repeat scroll center center rgba(0, 0, 0, 0);}
 
-.box-offers .hotel-offers h4, .box-offers .hotel-offers h4 a {
+#hotels .hotel-offer5 {background: url("/files/box-offers2.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+
+
+.box-offers .hotel-offers h4, .box-offers .hotel-offers h4 a, #hotels .hotel-offers h4, #hotels .hotel-offers h4 a {
   height: 100%;
   width: 100%;
 }
-.box-offers .hotel-offers h4 {
+.box-offers .hotel-offers h4, #hotels .hotel-offers h4 {
   left: 0;
   position: absolute;
   top: 0;
 }
-.box-offers .hotel-offers h4 a {
+.box-offers .hotel-offers h4 a, #hotels .hotel-offers h4 a {
   background: url(/files/07-png8.png) repeat 0 0 transparent;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -507,7 +498,8 @@ span.wpcf7-not-valid-tip {color: #222;}
   text-align: center;
   text-transform: uppercase;
 }
-.box-offers .hotel-offers h4 a:hover {
+.box-offers .hotel-offers h4 a, #hotels .hotel-offers h4 a {font-size: 1em;}
+.box-offers .hotel-offers h4 a:hover, #hotels .hotel-offers h4 a:hover {
   font-size: 19px;
   opacity: 0;
   text-decoration: none;
@@ -563,18 +555,49 @@ div.hssurveys_full {padding: 2%; width: 96%;}
   color: #fff;
   font-family: GothamNarrow-Light;
   font-size: 12px;
-  margin-top: 21px;
+  padding: 20px 0 10px;
 }
 .hotelschema .tel {margin-right: 20px;}
 .hotelschema .phone-label {display: none;}
 .hotelschema .mail:after {
   content: "|";
   font-size: 18px;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 26px;
 }
+.widget_qtranslate, .contacthotel {
+  color: #fff;
+  padding: 20px 0 10px;
+  text-transform: lowercase;
+}
+.contacthotel .email {margin: 0 9.5% 0 35px;}
+.align-left {text-align: left;}
+.align-center {text-align: center;}
+.align-right {text-align: right;}
 
 
-/*---------------------------  FULLSCREEN SLIDESHOW ----------------------------*/
+/* POLITICA DE COOKIES */
+
+#cookies-wrapper-content h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+#cookies-wrapper-content ul {
+  margin: 15px 0 20px;
+  overflow: hidden;
+}
+#cookies-wrapper-content ul li {
+  color: #ab9a5e;
+  float: left;
+  list-style-type: square;
+  margin-left: 22px;
+  width: 20%;
+}
+#cookies-wrapper-content ul li a:hover {color: #333;}
+
+#cookies-alert-wrapper .link {color: #333;}
+
+
+/*---------------------------  BACKGROUND SLIDESHOW ----------------------------*/
 
 /* Fix background fullscreen image with singlepic */
 #sidebar-preheader .ngg-singlepic{
@@ -584,22 +607,61 @@ div.hssurveys_full {padding: 2%; width: 96%;}
     padding:0!important;
     z-index:-1!important;
 }
-
-.background-slideshow {height: 600px;}
-
+.background-slideshow {height: 500px;}
 .background-slideshow {
-  height: 400px;
   overflow: hidden;
-  top: 157px;
+  top: 190px;
   width: 100%;
-  z-index: -1 !important;
 }
-
-.background-slideshow .slideshow .contSlideshow img {
+.background-slideshow .contSlideshow img {
   left: 0;
   margin-top: -36%;
   position: absolute;
   top: 50%;
+}
+.background-slideshow .prev, .background-slideshow .next,
+.container .on-page-slideshow .prev, .container .on-page-slideshow .next {
+    background: url("/files/sprite_arrows.png") no-repeat 0 0 transparent;
+}
+.background-slideshow .prev, .background-slideshow .next {
+  background-position: 0 0;
+  display: block;
+  height: 50px;
+  opacity: 0.8;
+  text-indent: -99999px;
+  width: 50px;
+}
+.background-slideshow .prev:hover, .background-slideshow .next:hover {opacity: 1;}
+.background-slideshow .prev {background-position: 0 -50px !important;}
+.background-slideshow .slideshow .contSlideshow .txtslider {
+  bottom: 80px;
+  color: #fff;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.background-slideshow .txtslider .title {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 3.3em;
+  line-height: 60px;
+  margin-left: 8%;
+  padding: 12px 35px;
+}
+
+.background-slideshow .txtslider .subtitle {
+  background-color: rgb(171, 154, 94);
+  background-color: rgba(171, 154, 94, 0.7);
+  float: right;
+  font-size: 1.6em;
+  margin: 10px 4% 0 0;
+  padding: 10px 35px;
+}
+
+.background-slideshow .txtslider .title, .background-slideshow .txtslider .subtitle {
+  display: inline-block;
 }
 
 /*------------------------------  CARRUSEL HOME --------------------------------*/
@@ -630,10 +692,10 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 .jcarousel .layer .itemLayer {
   display: inline-block;
   float: left;
-  height: 111px;
+  height: 90px;
   padding-top: 80px;
   position: relative;
-  width: 135px;
+  width: 107px;
 }
 .jcarousel .layer .itemLayer a {
   color: #746457;
@@ -641,19 +703,20 @@ div.hssurveys_full {padding: 2%; width: 96%;}
   font-family: "Gentium Basic",serif;
   font-size: 21px;
   font-weight: bold;
-  height: 110px;
-  width: 125px;
+  height: 90px;
+  width: 103px;
 }
 .jcarousel .layer .itemLayer a img {
-  height: 110px;
+  height: 90px;
   width: 100%;
 }
+
 .contenedor-total-carrusel {
   margin: 23px 0;
   padding: 0;
   position: relative;
 }
-.jcarousel, .contenedor-total-carrusel {height: 213px !important;}
+.jcarousel, .contenedor-total-carrusel {height: 210px !important;}
 .content-control {position: absolute;top: 91px;}
 .carousel-control {
   border: 0 none;
@@ -680,6 +743,91 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 
 /*------------------------------------------------------------------------------*/
 
+/*------------------------------  CHAIN RESULTS ---------------------------------*/
+
+.chain_results ul#menu_web {
+  display: block;
+  margin-top: 50px;
+}
+.chain_results ul#menu_web > li > a {border-top: 4px solid #fff;}
+.chain_results ul#menu_web > li > a:hover {border-top: 4px solid #b3a065;}
+.chain_results #header {height: 50px;}
+
+.chain_results #mirai_bookentrance {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 160px;
+  width: 730px;
+  z-index: 1000;
+}
+
+.chain_results #mirai_bookentrance #mirai_be9 {
+  height: 32px;
+  left: 0;
+  margin: 1px 0 0;
+  width: 180px;
+}
+.chain_results #mirai_bookentrance #mirai_be1 {
+  color: #cccccc;
+  left: 205px;
+  top: -26px;
+}
+.chain_results #mirai_bookentrance #mirai_be2 {
+  cursor: auto;
+  left: 205px;
+  top: 0;
+  width: 7em;
+}
+.chain_results #mirai_bookentrance #mirai_be3 {
+  color: #cccccc;
+  left: 339px;
+  top: -26px;
+}
+.chain_results #mirai_bookentrance #mirai_be4 {
+  height: 30px;
+  left: 339px;
+  text-align: center;
+  top: 0;
+  width: 70px;
+}
+.chain_results #mirai_bookentrance #mirai_be7 {
+  left: 427px;
+  top: 0;
+}
+.chain_results #mirai_bookentrance #mirai_be7 input {
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: visible;
+  padding: 5px 20px;
+}
+.chain_results #mirai_bookentrance #mirai_be8 {
+  color: #ccc;
+  cursor: pointer;
+  font-size: 12px;
+  left: 649px;
+  text-align: left;
+  text-decoration: none;
+  top: 6px;
+  width: 180px;
+}
+.chain_results #mirai_be8:hover {text-decoration: underline !important;}
+
+.chain_results .ui-datepicker .ui-datepicker-header, .chain_results .ui-datepicker .ui-datepicker-buttonpane button, .chain_results .ui-datepicker td:hover a {background: #D09042; color: #fff;}
+
+.chain_results #mirai_be0 {height: auto;}
+
+div#mirai_chainHotelsContainer {
+    margin: 110px auto 0;
+    width: 960px;
+}
+div#mirai_chainHotelsContainer a {
+  color: #000;
+  text-decoration: none;
+}
+
+
 
 /*-------------------------------  BOOKING PAGES -------------------------------*/
 .bookingstep1 {
@@ -688,18 +836,35 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 }
 .bookingstep1 header #logo {
   float: left;
-  width: auto;
+  padding-top: 0;
+  width: 280px;
 }
-.bookingstep1 #motor_reservas #mirai_bookentrance {
-  background: none repeat scroll 0 0 #b19e64;
+.bookingstep1 #motor_reservas #mirai_bookentrance, .chain_results #mirai_bookentrance {
+  background: #231f20;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.chain_results #mirai_bookentrance {
+  display: block;
+  height: 36px;
+  left: 0;
   margin: 0 auto;
-  padding: 0 0 10px;
-  width: 960px;
+  position: absolute;
+  padding: 30px 0 10px;
+  top: 160px;
+  width: 100%;
+  z-index: 1000;
 }
-.bookingstep1 #motor_reservas #mirai_roomSelectionContainer {
-  border-radius: 0;
-  box-shadow: 0 0;
+
+.chain_results #mirai_bookentrance > form {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 700px;
 }
+
 .bookingstep1 ul#menu_web li a,
 .bookingstep1 #motor_reservas #mirai_bookentrance #mirai_be7 input:hover {text-decoration: none !important;}
 
@@ -708,18 +873,82 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 .bookingstep1 #mirai_be0 input,
 .bookingstep1 #mirai_be0 span,
 .bookingstep1 #mirai_be0 select {
-	font-family: GothamNarrow-Light;
+	font-family: GothamNarrow-Light !important;
 }	
-.bookingstep1 #header {height: 170px;}
+
+.bookingstep1 #mirai_be0 input, .bookingstep1 #mirai_be0 select, .chain_results  #mirai_be0 input, .chain_results  #mirai_be0 select {
+  border-radius: 0;
+  padding: 5px;
+}
+
+.bookingstep1 #header {
+  height: auto;
+  margin-bottom: 20px;
+}
 .bookingstep1 #header .content {
-    margin: 0 auto;
-    width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 960px;
 }
 #mirai_be0, #mirai_be2, #mirai_be0 input, #mirai_be0 select {font-size: 15px !important;}
-#mirai_bookentrance > form {
-  background: none repeat scroll 0 0 #000;
-  padding: 0 0 13px;
+
+.bookingstep1 #motor_reservas #mirai_bookentrance #mirai_be7 input, .chain_results #motor_reservas #mirai_bookentrance #mirai_be7 input {
+  background-color: #ab9a5e;
+  font-size: 1.1em !important;
+  padding: 6px 20px;
 }
+
+.bookingstep1 #motor_reservas #mirai_bookentrance #mirai_be7 input:hover {color: #333;}
+
+.bookingstep1 #mirai_roomSelectionContainer a {
+  color: #ab9a5e !important;
+  font-size: 12px !important;
+}
+
+.chain_results ul#menu_web > li ul.sub-menu {z-index: 2000 !important;}
+
+.bookingstep1 ul#menu_web li {
+  margin-left: 3%;
+  font-size: 1.1em;
+}
+
+.bookingstep1 ul#menu_web li.visible-phone {
+  display: none;
+}
+
+ /*Ocultar la caja blanca con su boxshadow*/
+.bookingstep1 div#mirai_roomSelectionContainer {
+  background-color: transparent !important;
+  border-radius: 0 ;
+  border: 0;
+  box-shadow: none !important;
+  margin-top: 0;
+}
+
+.inforoom_nav li.closeRoomInfo span {background-color: #ab9a5e !important;}
+#availableRoomList .onlyThisType, #availableRoomList tr.roomtype p.onlyThisType {
+  color: #333 !important;
+}
+
+#mirai_extra h2 {
+  color: #ab9a5e !important;
+  font-family: GothamNarrow-Medium;
+  font-size: 21px !important;
+  line-height: 1.3em;
+  width: auto;
+}
+
+#mirai_extra h2, #mirai_extra h3 {
+  color: #ab9a5e !important;
+  font-family: GothamNarrow-Medium;
+}
+
+#mirai_extra h2 {font-size: 21px !important;}
+#mirai_extra h3 {
+  font-size: 15px !important;
+  margin: 10px 0 8px;
+}
+
 #hotelName {
   color: #b19e64;
   display: block !important;
@@ -731,14 +960,16 @@ div.hssurveys_full {padding: 2%; width: 96%;}
   width: 280px;
 }
 
+div#mirai_chainHotelsContainer .descriptionHotel {width: 75%;}
+
 /* MOSTRAR MENU EN BOOKINGSTEP */
 .bookingstep1 ul#menu_web {
     display:block;
 	margin: 0;
-    padding-top: 54px;
+    padding-top: 50px;
 }
 #mirai_be1, #mirai_be3, #mirai_be5 {color: #fff;}
-.bookingstep1 ul#menu_web li a {text-decoration:none; font-family: GothamNarrow-Light; border-top: 4px solid #fff;}
+.bookingstep1 ul#menu_web li a {text-decoration:none; border-top: 4px solid #fff;}
 .bookingstep1 .booking_mobile, .bookingstep1 .sub-menu {display: none!important;}
 
 
@@ -831,63 +1062,6 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 
 /*******************************************************/
 
-
-/*---------------------------------- IATA CONTENT ------------------------------*/
-.mi-iata-content .mi-action #check .engine_mashup {
-    background: transparent;
-}
-.mi-iata-content .mi-action #check .engine_mashup form {
-    text-align: left;
-    padding: 0px;
-}
-.mi-iata-content .mi-action #check .engine_mashup form .control-group {
-    display: block;
-    margin: 0px;
-    padding: 0px;
-}
-.mi-iata-content .mi-action #check .engine_mashup form .control-group label {
-    display: block;    
-}
-.mi-iata-content .mi-action #check .engine_mashup form .control-group #engine-submit-wrapper {
-    margin-top: 20px;
-}
-.mi-iata-content .mi-action #request input[type=submit],
-.mi-iata-content .mi-action #check .engine_mashup form .button-group #engine-submit-button {
-    margin-top: 30px !important;
-    width: 223px !important;
-    padding: 9px 14px;
-    font-size: 16px !important;
-    font-weight: normal;
-    line-height: normal;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    height: 40px;
-    text-transform: lowercase;
-    background-color: #999 !important;
-    background-image: none;
-}
-.mi-iata-content .mi-action #request {}
-.mi-iata-content .mi-action #request label {
-    color: #fff;
-}
-.mi-iata-content .mi-action #request span {
-    margin-bottom: 10px;
-    display: inline-block;
-}
-.mi-iata-content .mi-action .tab-pane input[type=text] {
-    height: 20px;
-    padding: 4px 6px;
-}
-.mi-iata-content .mi-action .tab-pane input.code {
-    width: 210px !important;
-}
-.mi-iata-content .mi-action .tab-pane select {
-    height: 30px;
-}
-/*------------------------------------------------------------------------------*/
-
-
 /*------------------------------------ BLOG ------------------------------------*/
 .blog-wrapper {padding: 10px 20px;}
 .post .entry img {box-shadow: 0 0 10px #333333;-webkit-box-shadow: 0 0 10px #333333;border: 5px solid #FFF;}
@@ -899,20 +1073,126 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 
 /*--------------------------------- SITE STYLES --------------------------------*/
 
+.box-events, .flex {display: flex !important;}
+.box-events div, .flex div {margin: auto auto;}
+.box-events ul li {
+  font-size: 1.3em;
+  line-height: 1.4;
+}
+.box-events a img {border: 3px solid #fff;}
+.box-events a img:hover {border: 3px solid #B19E64;}
+
+.asterisk {color: #FC7D7B;}
+div.wpcf7-response-output {
+  bottom: -60px;
+  position: absolute;
+}
+
+/* SERVICIOS */
+#services h3 {margin-top: 0!important;}
+
+/* CONTACT */
+
+.multi-contact {}
+.multi-contact ul {
+  display: block;
+  margin: 0 0 17px 20%;
+}
+.multi-contact ul li {
+  color: #777;
+  font-size: 0.8em;
+  list-style: disc outside none;
+  margin: 0px 0 0 12px;
+}
+.multi-contact ul li.site-name {
+  color: #222;
+  font-family: GothamNarrow-book;
+  font-size: 0.9em;
+  list-style: none outside none;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+.multi-contact ul li.site-location {}
+.multi-contact ul li.site-email {}
+.multi-contact ul li.site-phone {}
+
+
+
+
+/*------------------------------  BACK TOP ---------------------------------*/
+
+#back-top, .box-offers .hotel-offers h4 a, #hotels .hotel-offers h4 a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#back-top {
+    background: url("/files/back_top.png") no-repeat center -71px #AB9A5E;
+    border-radius: 30px 0 0 30px;
+    -webkit-border-radius: 30px 0 0 30px;
+    bottom: 100px;
+    color: #fff;
+    display: none;
+    height: 50px;
+    opacity: 0.8;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    width: 60px;
+    z-index: 5;
+}
+#back-top:hover {
+    opacity:1;
+}
+
+
+/* SNIPPET: FIX ENGINE ON PAGE SCROLL */
+.fixed_engine {
+	background: #231F20;
+    border-bottom: 7px solid #ab9a5e;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.fixed_engine {
+    -webkit-transition: top 0.3s linear;
+    -moz-transition: top 0.3s linear;
+    -ms-transition: top 0.3s linear;
+    -o-transition: top 0.3s linear;
+    transition: top 0.3s linear;
+}
+
 /*------------------------------------------------------------------------------*/
 
 /*-------------------------------- MEDIA QUERYS --------------------------------*/
 /* Large desktop */
 @media (min-width: 1200px) {
 
+#header {height: 790px;}
 .hotelschema {font-size: 15px;}
-ul#menu_web {margin-top: 12px;}
-.background-slideshow {height: 500px;}
-.engine_mashup {background: none repeat scroll 0 0 #b19e64; margin: 485px 0 40px;}
-.content-page h3 {font-size: 16px;}
-h3.special-title {font-size: 13px;}
+.background-slideshow {height: 600px;}
+h3.special-title {font-size: 14px;}
+h3 {font-size: 1.1em;}
+.jcarousel .layer .itemLayer {height: 110px; width: 135px;}
+.jcarousel .layer .itemLayer a {height: 110px; width: 125px;}
+.jcarousel .layer .itemLayer a img {height: 110px; width: 100%;}
+div.wpcf7-response-output {bottom: -40px;}
 
-
+.engine_mashup div.fixed_engine {
+    left: 50%;
+    margin-left: -600px;
+    text-align: center;
+    width: 1200px !important;
+}
+div#mirai_chainHotelsContainer {width: 1200px;}
+#hotels .hotel-offers {height: 187px;}
+.multi-contact ul {margin: 0 0 17px 40%;}
 
 
 
