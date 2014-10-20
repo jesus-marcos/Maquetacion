@@ -18,7 +18,11 @@ h3 {
   padding-bottom: 0;
   text-transform: uppercase;
 }
-h4 {}
+h4 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
 
 h2, h3, h4 {}
 
@@ -82,7 +86,8 @@ body {font-size: 15px;}
 
 
 /*------------------------------------ LOGO ------------------------------------*/
-#logo {padding-top: 60px;}
+#logo {padding-top: 41px;}
+#logo img {width: 174px;}
 /*------------------------------------------------------------------------------*/
 
 
@@ -149,6 +154,17 @@ ul#menu_web > li.current-menu-parent a, ul#menu_aux1 > li.current-menu-parent a 
   font-size: 1.2em;
   margin-bottom: 13px;
   padding: 3px 0 4px;
+  position: relative;
+}
+.mapa .external-link:after {
+  border-bottom: 4px solid #ab9a5e;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  text-decoration: underline;
+  width: 167px;
 }
 .mapa .external-link:hover {
   color: #333;
@@ -508,19 +524,9 @@ html:not(.ie8) .engine_mashup.showInlineLabelsFields .filled-control-group .empt
 
 
 /*----------------------------  OPINIONES MASHUP -------------------------------*/
-.mirai_opiniones {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #scoreTop {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #scoreTop #score {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #scoreTop #ratingBar {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #mirai_recommend {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #mirai_recommend h3 {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #mirai_reviewSouce {}
 .mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating .mirai_btReview {float: right;}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating .mirai_btReview:hover {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #writeReviews {}
 .mirai_opiniones > p {display:none;} /* link hotelsearch.com */
+.xdhsFloat {z-index: 101 !important;}
 /*------------------------------------------------------------------------------*/
 
 
@@ -702,9 +708,18 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 }
 .bookingstep1 header #logo {
   float: left;
-  padding-top: 70px;
-  width: 400px;
+  padding-top: 91px;
+  width: 174px;
 }
+.bookingstep1 ul#menu_web, .bookingstep1 ul#menu_aux1 {
+  display: block;
+  float: right;
+  font-size: 1.1em;
+  margin-top: 50px;
+}
+
+.bookingstep1 ul#menu_web li a, .bookingstep1 ul#menu_aux1 li a {text-decoration: none;}
+
 .bookingstep1 header #logo a img {
   height: auto;
   width: 100%;
@@ -1123,8 +1138,6 @@ strong, #cookies-wrapper-content h1 {
 }
 
 .boxModal {
-  /*margin-bottom: 50%;*/
-  margin-top: -25%;
   margin-left: -45%;
   width: 90%;
 }
@@ -1260,11 +1273,13 @@ strong, #cookies-wrapper-content h1 {
 
 .specialModal .boxModal .list-deco li.full {width: 100%;}
 
-.boxes-rooms .on-page-slideshow, .boxes-restaurant .on-page-slideshow img {
+.boxes-rooms .on-page-slideshow, .boxes-rooms .on-page-slideshow img {
   height: 311px !important;
 }
+.boxes-restaurant .on-page-slideshow, .boxes-restaurant .on-page-slideshow img {height: 260px !important;}
 
-.boxes-rooms .on-page-slideshow, .boxes-rooms .on-page-slideshow img, .boxes-restaurant a img {
+
+.boxes-rooms .on-page-slideshow, .boxes-rooms .on-page-slideshow img, .boxes-restaurant .on-page-slideshow, .boxes-restaurant .on-page-slideshow img {
   margin-bottom: 9px;
 }
 
@@ -1274,8 +1289,14 @@ strong, #cookies-wrapper-content h1 {
   top: -40px !important;
 }
 
+.boxes-rooms .on-page-slideshow, .boxes-rooms .on-page-slideshow img {height: 209px !important;}
+
+
 /* SITUACIÓN */
 
+.boxes-location .wrappermodal {
+  margin-top: 29px;
+}
 .boxes-location h3 {
   font-size: 1.2em;
   text-transform: none;
@@ -1304,7 +1325,6 @@ strong, #cookies-wrapper-content h1 {
 /*
 .boxes-restaurant .myModal:after {
   content: "+";
-  font-size: 1.5em;
   padding-left: 8px;
   vertical-align: -4px;
 }
@@ -1349,7 +1369,6 @@ strong, #cookies-wrapper-content h1 {
 .box-photos {}
 
 .box-photos h3 {
-    font-size: 1.5em;
     margin-bottom: 32px;
     padding-top: 10px;
 }
@@ -1559,9 +1578,7 @@ ul#menu_web.affix {
 
 .contacthotel .email {margin: 0 9.5% 0 35px;}
 
-.boxes-rooms .on-page-slideshow, .boxes-rooms .on-page-slideshow img, .boxes-restaurant .on-page-slideshow img {height: 311px !important;}
-
-.boxes-restaurant .modal-body .on-page-slideshow, .boxes-restaurant .modal-body .on-page-slideshow img {height: 448px !important;}
+.boxes-rooms .on-page-slideshow, .boxes-rooms .on-page-slideshow img {height: 311px !important;}
 
 .boxFirst .specialModal {width: 97%;}
 
@@ -1573,7 +1590,6 @@ ul#menu_web.affix {
 .boxModal {
   left: 50%;
   margin-left: -600px;
-  margin-top: -25%;
   width: 1200px;
 }
 
@@ -1582,18 +1598,59 @@ ul#menu_web.affix {
 }
 #main .content h3 span.special-text {font-size: inherit;}
 
+	.boxes-rooms .on-page-slideshow, .boxes-rooms .on-page-slideshow img {
+	  height: 261px !important;
+	}
+
+
+
+
+.background-slideshow .slideshow .contSlideshow a img, .background-slideshow .slideshow .contSlideshow img {
+    height: 1055px;
+    width: 100%;
+}
+.background-slideshow .contSlideshow img {
+    left: 0;
+    margin-top: -40%;
+    position: absolute;
+    top: 50%;
+}
+
+
 
 
 }/* ipad portrait - landscape */
-@media (min-device-width: 768px) and (max-device-width: 979px){}
+@media (min-device-width: 768px) and (max-device-width: 979px){
 
-/* customize ipad portrait */
+	.background-slideshow {top: 90px;}
+	#header {height: 600px;}
+	.mapa .map_canvas {height: 287px !important;}
+
+}/* customize ipad portrait */
 @media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : portrait) {
+    
     .bookingstep1 #mirai_roomSelectionContainer {width: 98%;}
     .bookingstep1 #header .content {width: 100%;}
-}
-
-/* customize ipad landscape */
+    
+    .contacthotel .email {font-size: 12px;}
+    #logo {padding-top: 7px;}
+	ul#menu_web {width: 100%;text-align: center;}
+    .background-slideshow {top: 100px;}
+    .background-slideshow .txtslider .title {font-size: 2.4em;}
+    .engine_mashup {margin-bottom: 0px; margin-top: 0;}
+    .mapa .map_canvas {height: 365px!important;}
+    
+    .widget_qtranslate {width: 80px;}
+    .boxes-location .wrappermodal {margin: 7px 0 0;}
+    ul#menu_web, #menu_aux1 {width: 100%;text-align: center;}
+    
+    .bookingstep1 #mirai_bookentrance {width: auto !important;}
+    
+    .mapa .formRuta {margin-top: 75px;}
+    .bookingstep1 header #logo {padding-top: 61px;margin: 0 0 0 20px;}
+    .bookingstep1 ul#menu_aux1 {margin-top: 0px;}
+    
+}/* customize ipad landscape */
 @media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : landscape) {}
 
 /*------------------------------------------------------------------------------*/

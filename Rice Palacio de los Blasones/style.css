@@ -149,12 +149,27 @@ ul#menu_web > li.current-menu-parent a, ul#menu_aux1 > li.current-menu-parent a 
   font-size: 1.2em;
   margin-bottom: 13px;
   padding: 3px 0 4px;
+  position: relative;
+}
+.mapa .external-link:after {
+  border-bottom: 4px solid #ab9a5e;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  text-decoration: underline;
+  width: 167px;
 }
 .mapa .external-link:hover {
   color: #333;
   text-decoration: none;
 }
-.mapa .map_canvas {margin-bottom: 10px; width: 100% !important;}
+.mapa .map_canvas {
+  height: 282px !important;
+  margin-bottom: 10px;
+  width: 100% !important;
+}
 .mapa .map_canvas p {}
 .mapa .map_canvas img {}
 .mapa .formRuta {
@@ -508,19 +523,9 @@ html:not(.ie8) .engine_mashup.showInlineLabelsFields .filled-control-group .empt
 
 
 /*----------------------------  OPINIONES MASHUP -------------------------------*/
-.mirai_opiniones {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #scoreTop {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #scoreTop #score {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #scoreTop #ratingBar {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #mirai_recommend {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #mirai_recommend h3 {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #mirai_reviewSouce {}
 .mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating .mirai_btReview {float: right;}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating .mirai_btReview:hover {}
-.mirai_opiniones #xdhsReviewSummaryContent-XdHs #hsRating #writeReviews {}
 .mirai_opiniones > p {display:none;} /* link hotelsearch.com */
+.xdhsFloat {z-index: 101 !important;}
 /*------------------------------------------------------------------------------*/
 
 
@@ -700,10 +705,19 @@ div.hssurveys_full {padding: 2%; width: 96%;}
     /*background: url("") no-repeat fixed center top;
     background-size: 100% 100%;*/
 }
+.bookingstep1 ul#menu_web, .bookingstep1 ul#menu_aux1 {
+  display: block;
+  float: right;
+  font-size: 1.1em;
+  margin-top: 50px;
+}
+.bookingstep1 ul#menu_web li a, .bookingstep1 ul#menu_aux1 li a {
+  text-decoration: none;
+}
 .bookingstep1 header #logo {
   float: left;
   padding-top: 70px;
-  width: 400px;
+  width: 300px;
 }
 .bookingstep1 header #logo a img {
   height: auto;
@@ -1123,8 +1137,6 @@ strong, #cookies-wrapper-content h1 {
 }
 
 .boxModal {
-  /*margin-bottom: 50%;*/
-  margin-top: -25%;
   margin-left: -45%;
   width: 90%;
 }
@@ -1275,7 +1287,7 @@ strong, #cookies-wrapper-content h1 {
   font-size: 1.2em;
   text-transform: none;
 }
-
+.boxes-location .link-pdf {margin: 57px 0 0;}
 .latlon-wrapper label {
   display: inline-block;
   font-weight: bold;
@@ -1332,9 +1344,7 @@ strong, #cookies-wrapper-content h1 {
 
 .box-meetings .table td, .box-meetings .table th {text-align: center;}
 
-.box-meetings .on-page-slideshow, .box-meetings .on-page-slideshow img {
-  height: 267px !important;
-}
+.box-meetings .on-page-slideshow, .box-meetings .on-page-slideshow img {height: 267px !important;}
 
 .box-meetings .meetslider {padding: 0 0 0 4%;}
 
@@ -1344,7 +1354,6 @@ strong, #cookies-wrapper-content h1 {
 .box-photos {}
 
 .box-photos h3 {
-    font-size: 1.5em;
     margin-bottom: 32px;
     padding-top: 10px;
 }
@@ -1557,20 +1566,17 @@ ul#menu_web.affix {
 .contacthotel .email {margin: 0 9.5% 0 35px;}
 
 .boxes-rooms .on-page-slideshow, .boxes-rooms .on-page-slideshow img {height: 261px !important;}
-.box-meetings .on-page-slideshow, .box-meetings .on-page-slideshow img {height: 368px !important;}
 .boxes-restaurant .modal-body .on-page-slideshow, .boxes-restaurant .modal-body .on-page-slideshow img {height: 448px !important;}
 
 .boxFirst .specialModal {width: 97%;}
 
 .boxes-rooms {min-height: 374px !important;}
-.box-meetings .wrappermodal {min-height: 368px;}
 
 .specialModal .boxModal .list-deco li {width: 33%;}
 .specialModal .boxModal .list-deco li {width: 33%;}
 .boxModal {
   left: 50%;
   margin-left: -600px;
-  margin-top: -25%;
   width: 1200px;
 }
 
@@ -1582,15 +1588,33 @@ ul#menu_web.affix {
 
 
 }/* ipad portrait - landscape */
-@media (min-device-width: 768px) and (max-device-width: 979px){}
+@media (min-device-width: 768px) and (max-device-width: 979px){
 
-/* customize ipad portrait */
+	.background-slideshow {top: 90px;}
+	#header {height: 600px;}
+	.mapa .map_canvas {height: 287px !important;}
+
+
+}/* customize ipad portrait */
 @media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : portrait) {
+
     .bookingstep1 #mirai_roomSelectionContainer {width: 98%;}
     .bookingstep1 #header .content {width: 100%;}
-}
-
-/* customize ipad landscape */
+    .bookingstep1 #mirai_bookentrance {width: auto !important;}
+    
+    .contacthotel .email {font-size: 12px;}
+    #logo {padding-top: 7px;}
+	ul#menu_web {width: 100%;text-align: center;}
+    .background-slideshow {top: 100px;}
+    .background-slideshow .txtslider .title {font-size: 2.4em;}
+    .engine_mashup {margin-bottom: 0px; margin-top: 0;}
+    .mapa .map_canvas {height: 365px!important;}
+    
+    .widget_qtranslate {width: 80px;}
+    .boxes-location .link-pdf {margin: 63px 0 0;}
+    ul#menu_web, #menu_aux1 {width: 100%;text-align: center;}
+   
+}/* customize ipad landscape */
 @media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : landscape) {}
 
 /*------------------------------------------------------------------------------*/
