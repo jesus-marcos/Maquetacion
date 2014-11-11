@@ -1,0 +1,1427 @@
+﻿/*
+Theme Name: Hotel Villamadrid 2014
+Theme URI: hotelvillamadrid.com
+Description: Hotel Villamadrid 2014
+Template: mirai
+Author: Mirai Espana
+*/
+
+
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------- GENERIC STYLES -------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+h1 {}
+
+h2, #cookies-wrapper-content h1 {
+  color: #363130;
+  font-size: 30px;
+  line-height: 33px;
+  margin-bottom: 15px;
+}
+
+h2.bg-line {
+  background: url("/files/bg-line.jpg") repeat-x scroll 0 20px rgba(0, 0, 0, 0);
+}
+
+.bg-wrapper h2.bg-line span {
+  background: none repeat scroll 0 0 #f2eeed;
+  padding: 0 10px;
+}
+
+h2.bg-line span {
+  background: none repeat scroll 0 0 #EDE3D5;
+  padding: 0 10px;
+}
+
+h3 {}
+
+h4 {
+  color: #9b5237;
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+h1, h2, h3, h4, .widget_qtranslate ul li a, ul#menu_web li a, .offers-mashup .more-info-link, .engine_mashup > div form .button-group input[type="submit"], #engine_mashup fieldset:before, .corner, .link, #menu_aux1 li a, .my-booking, #mirai_be7 input, .offers-listing-wrapper h2, .offers-listing-wrapper .offer .offer-button, .offers-detail-wrapper .offer-calendar-wrapper .offer-button {
+    font-family: 'Lora', serif !important;
+}
+
+a {color: #d1a849;}
+
+a:hover {color: #756757;}
+
+body {
+	color: #666;
+	font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+}
+
+ol, ul, li {
+list-style: inherit;
+}
+
+ul li {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+#mirai_rootTable #summaryElements li {
+  list-style: outside none none;
+}
+
+#cookies-wrapper-content ul {}
+
+#cookies-wrapper-content ul li {
+  float: left;
+  margin: 3px 0 0 20px;
+  width: 24%;
+}
+
+.italic {
+  color: #999;
+  font-style: italic;
+}
+
+#logo {
+  margin-top: 5px;
+  /*width: auto;*/
+}
+
+#header {}
+
+#header .content {}
+
+#main {
+  background: none repeat scroll 0 0 #ede3d5;
+}
+
+.cat-cookies-policy #main {
+  background: none repeat scroll 0 0 #f2eeed;
+  border-top: 7px solid #453d43;
+}
+
+#legal-notice {
+  border-bottom: 7px solid transparent !important;
+}
+
+#main .content {}
+
+#main ul {
+  margin: 0 0 10px;
+}
+
+#footer {
+  background: none repeat scroll 0 0 #362e2e;
+  border-top: 7px solid #d1a849;
+}
+
+#footer .content {}
+
+.hotelschema {
+  color: #fff;
+  display: block;
+  float: none;
+  margin: 10px auto 0;
+  position: relative;
+  text-align: center;
+  width: auto;
+}
+
+.hotelschema .phone-label {
+  display: none;
+}
+
+.hotelschema a {
+  color: #d1a849;
+}
+
+.my-booking {
+  bottom: 145px;
+  position: absolute;
+  right: 0;
+}
+
+/* Cuando en bootstrap el contenido es container, posicion relativa para los elementos en absoluta */
+#header .content, #main .content, #footer .content {
+    position: relative;
+}
+
+
+img {
+    width: auto
+}
+
+
+#engine img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+}
+
+.link, .offers-mashup .more-info-link {
+  background: none repeat scroll 0 0 transparent;
+  border: 2px solid #f8c313;
+  border-radius: 0;
+  box-shadow: 0 0 !important;
+  color: #756757;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 30px;
+  text-shadow: 0 0 !important;
+  text-transform: lowercase;
+}
+
+.link {
+  float: left;
+  font-weight: 300;
+  margin: 20px 0 0;
+}
+
+.link:hover, .offers-mashup .more-info-link:hover {
+  border: 2px solid #7a612c;
+  text-decoration: none;
+}
+
+#cookies-alert-wrapper .link {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: inherit;
+  float: inherit;
+  font-size: inherit;
+  margin: 0 20px;
+  padding: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.pdd1 {
+    padding-left: 5%;
+}
+
+.pdd2 {
+    padding-right: 5%;
+}
+
+.mrg1 {
+	margin-top: 70px;
+}
+
+.mrg2 {
+	margin-top: 40px;
+}
+
+.mrg3 {
+	margin-bottom: 20px;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.sixty {
+    width: 60% !important;
+}
+
+.cat-location #main [class^="icon-"], .cat-location #main [class*=" icon-"], 
+.cat-rooms #main [class^="icon-"], .cat-rooms #main [class*=" icon-"],
+.cat-services #main [class^="icon-"], .cat-services #main [class*=" icon-"] {
+    background-color: #D6BFA7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: block;
+	height: 90px;
+    margin: 0 auto 10px;
+    width: 90px;
+}
+
+/*---------------------------------------------------------------------------*/
+/*--------------------------------- PAGES -----------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/* HOME */
+#services-home .list-services {
+  margin: 128px 0 0;
+}
+
+#services-home .list-services li {
+  background: none repeat scroll 0 0 #000;
+  display: block;
+  float: left;
+  margin: 0 2% 60px 0;
+  position: relative;
+  width: 32%;
+}
+
+#services-home .list-services li.no-margin {
+	margin: 0 !important;
+}
+
+#services-home .list-services li.special-service {
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+
+#services-home .list-services li img {
+  height: 260px;
+}
+
+#services-home .list-services li img:hover {
+  opacity: 0.6;
+}
+
+#services-home .list-services a, #services-home .list-services a h3, #services-home .list-services li img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#services-home .list-services li h3 {
+  background-color: #000;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  padding: 7px 0;
+  position: absolute;
+  width: 100%;
+}
+
+
+#services-home .list-services a:hover h3 {
+    background: none repeat scroll 0 0 #d1a849;
+}
+
+#services-home .list-services li.special-service h3 {
+  background-image: url("/files/wifi33.png");
+  background-repeat: no-repeat;
+  background-position: 0 7px;
+  background-color: transparent !important;
+  color: #666;
+  display: block;
+  margin: 0 0 35px 25%;
+  padding-left: 40px;
+  width: auto;
+}
+
+.corner {
+  color: #fff;
+  padding: 10px 0;
+  position: absolute;
+  right: -43px;
+  top: -2px;
+  transform: rotate(47deg) scale(1) skew(1deg) translate(0px);
+  -webkit-transform: rotate(47deg) scale(1) skew(1deg) translate(0px);
+  -moz-transform: rotate(47deg) scale(1) skew(1deg) translate(0px);
+  -o-transform: rotate(47deg) scale(1) skew(1deg) translate(0px);
+  -ms-transform: rotate(47deg) scale(1) skew(1deg) translate(0px);
+  width: 160px;
+  z-index: 10;
+}
+
+#location-home {
+  height: 440px;
+  position: relative;
+}
+
+#location-home img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+#location-home div {
+  margin: auto 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* MAIN */
+#main {
+}
+
+#main .content {
+}
+
+.container h3, #cookies-wrapper-content h2 {
+  color: #775C3B;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+#main section, #cookies-wrapper-content {
+  padding: 100px 0;
+}
+
+#main section.bg-wrapper {
+  background: none repeat scroll 0 0 #f2eeed;
+  border-bottom: 7px solid #453d43;
+  border-top: 7px solid #453d43;
+  padding: 100px 0;
+}
+
+#main section#engine {
+  padding: 0px;
+}
+
+[class*="span"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* LOCATION */
+.mapa .external-link {
+  display: block;
+  text-align: right;
+}
+
+#directions i {
+	background-image: url("/files/transports.png");
+}
+
+.icon-plane {
+    background-position: 10px 17px;
+}
+
+.icon-bus {
+	background-position: 7px -115px;
+}
+
+#directions ul {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#directions ul li {
+  list-style: outside none disc;
+  text-align: left;
+}
+
+#directions img {
+	margin: 0 0 15px 0;
+}
+
+.ie8 #directions img {
+	height: 700px;
+}
+
+/* ROOMS */
+#rooms-presentation ul li {
+  display: inline-block;
+  float: left;
+  list-style: outside none none;
+  margin: 30px 0 10px;
+  width: 33%;
+}
+
+#rooms-presentation i {
+	background-image: url("/files/service-rooms.png");
+}
+
+.icon-plane {
+    background-position: 10px 17px;
+}
+
+.icon-conditioning {
+    background-position: 10px 25px;
+}
+
+.icon-heating {
+    background-position: 7px -182px;
+}
+
+.icon-satelite {
+    background-position: 9px -376px;
+}
+
+.icon-bath {
+    background-position: 5px -575px;
+}
+
+.icon-wifi {
+    background-position: 6px -775px;
+}
+
+.icon-tvlcd {
+    background-position: 8px -975px;
+}
+
+.icon-tdt {
+    background-position: 6px -1177px;
+}
+
+.icon-safe {
+    background-position: 8px -1375px;
+}
+
+.icon-minibar {
+    background-position: 7px -1575px;
+}
+
+.icon-desk {
+    background-position: 7px -1776px;
+}
+
+.icon-phone {
+    background-position: 7px -1976px;
+}
+
+.icon-closet {
+    background-position: 7px -2172px;
+}
+
+.icon-amenities {
+    background-position: 5px -2373px;
+}
+
+.icon-roomservice {
+    background-position: 5px -2574px;
+}
+
+
+/* SERVICES */
+#restaurant-service {}
+
+
+#restaurant-service ul {
+  display: block;
+  margin: 0 auto 19px;
+  text-align: left;
+  width: 470px;
+}
+
+
+/* CENA Y BAILE */
+.no-style li {
+  list-style: none !important;
+}
+
+#main .align-list {
+  display: inline-block;
+  margin: 0 auto 20px;
+  position: relative;
+  text-align: left;
+  width: auto;
+}
+
+/* CENA Y BAILE */
+.icon-menu {
+  background-image: url("/files/restaurant2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.icon-contact {
+  background: url("/files/phone25.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.price-dinner a h3:after {
+  content: " >";
+}
+
+/* PHOTOS */
+.n_photos {
+    background: url('/files/photo-icon.png') no-repeat center right;
+	bottom: 5px;
+    color: #fff;
+    display: inline-block;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    padding-right: 28px;
+    position: absolute;
+    right: 8px;
+}
+
+.photo-wrap, .photo_title {
+  padding: 3px 2px;
+  position: relative;
+}
+
+.ngg-galleryoverview {
+    margin-top:0
+}
+
+.ngg-gallery-thumbnail-box {
+    display: none;
+}
+
+.ngg-gallery-thumbnail-box.first-child {
+    display:block;
+}
+
+.ngg-gallery-thumbnail-box.first-child {
+	width: 100%;
+}
+
+.ngg-galleryoverview .ngg-gallery-thumbnail {
+  margin-right: 0;
+  position: relative;
+  width: 100%;
+}
+
+.ngg-galleryoverview .ngg-gallery-thumbnail img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+	width: 100%;
+}
+
+.ngg-galleryoverview .ngg-gallery-thumbnail a {
+    display:block;
+}
+
+.ngg-galleryoverview .ngg-gallery-thumbnail a:after {
+    background: url('/files/icon-viewmore.png') no-repeat top center #A28B69;
+    content: "";
+    opacity: 0;
+    display: block;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.ie8 .ngg-galleryoverview .ngg-gallery-thumbnail a:after {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.ngg-galleryoverview .ngg-gallery-thumbnail a:hover:after {
+    background: url('/files/icon-viewmore.png') no-repeat center #A28B69;
+    opacity:0.8;
+}
+
+.wrap-top {
+  margin-bottom: 5px;
+  margin-right: 2px;
+}
+
+.wrap-bottom {
+  margin: 0 2px 0 0;
+}
+
+.wrap-left {
+  margin: 0 0 0 3px;
+}
+
+
+/* OFFERS */
+.offers-mashup {
+  background: none repeat scroll 0 0 #8f7f6a;
+  background: none repeat scroll 0 0 rgba(79, 66, 66, 0.7);
+  margin: 0;
+  padding: 20px 0 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 9px;
+  width: 320px;
+}
+
+.offers-slide .slide .no-offers {
+  color: #fff;
+}
+
+.offers-mashup-slide {
+  color: #fff;
+}
+
+.offers-mashup dl dd {
+  margin-top: 4px;
+}
+
+.offers-mashup h3 {
+  color: #f8c313;
+  font-size: 22px;
+}
+
+.offers-mashup .more-info-link {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.offers-listing-wrapper, .offers-detail-wrapper {
+  background-color: #ede3d5;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.offers-listing-wrapper h2 {
+  font-size: 30px;
+  font-weight: inherit;
+  line-height: 33px;
+  text-align: center;
+}
+
+.offers-listing-wrapper .offer .offer-title {
+  font-weight: inherit;
+}
+
+
+/* REVIEWS */
+div.hssurveys_full .comments p.commentsPerson span.date {
+    color: #000 !important;
+}
+
+div.hssurveys_full .noLink, div.hssurveys_full .noLink a {
+    color: #000 !important;
+}
+
+div.hssurveys_full {
+    padding: 2%; 
+    width: 96%;
+}
+
+.reviewsOn .questions li p.answer {
+    line-height: 22px !important;
+    padding: 0 6px 0 10px !important;
+}
+
+/* BLOG */
+.blog-wrapper {
+    padding: 10px 20px;
+}
+
+.post .entry img {
+    box-shadow: 0 0 10px #333333;
+    -webkit-box-shadow: 0 0 10px #333333;
+	border: 5px solid #FFF;
+}
+
+.blog-wrapper .entry ol, .blog-wrapper .entry ul {
+    margin-bottom: 20px;
+}
+
+.blog-wrapper .entry li {
+    margin-left: 22px;
+}
+
+.blog-wrapper .entry ol li {
+    list-style-type: decimal;
+}
+
+.blog-wrapper .entry ul li {
+    list-style-type: disc;
+}
+
+/*---------------------------------------------------------------------------*/
+/*--------------------------------- WIDGETS ---------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/* QTRANSLATE */
+.widget_qtranslate {
+  float: right;
+  margin: 17px 0 0;
+  text-align: right;
+  width: auto;
+}
+
+.widget_qtranslate select {
+    width: 100px;
+}
+
+.widget_qtranslate ul li {
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+.widget_qtranslate ul li a {
+  color: #d1a849;
+}
+
+.widget_qtranslate ul li.active a {
+  color: #6b6969;
+}
+
+/* MENU WEB */
+ul#menu_web {
+  margin-top: 13px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+ul#menu_web > li {
+  display: inline-block;
+  margin: 0 2%;
+  position: relative;
+}
+
+ul#menu_web li a {
+  border-bottom: 8px solid transparent;
+  color: #807979;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+ul#menu_web > li.current-menu-item > a, ul#menu_web > li.current-menu-parent > a, ul#menu_web > li ul.sub-menu li.current-menu-item a, ul#menu_web li a:hover {
+	border-bottom: 8px solid #D1A849 !important;
+}
+
+#menu_aux1 {
+  float: none;
+  margin: 10px auto 20px;
+  text-align: center;
+  width: 369px;
+}
+
+#menu_aux1 li {
+  display: inline-block;
+  margin: 0 5%;
+}
+
+#menu_aux1 li a {
+  color: #d1a849;
+  font-size: 14px;
+}
+
+/* MOTOR FRONT */
+#engine {
+	position: relative;
+}
+
+#engine img {
+  border-top: 9px solid #d1a849;
+  width: 100%;
+}
+
+#engine_mashup {
+  margin: -144px 0 0;
+}
+
+#engine_mashup fieldset {
+  padding: 0 0 0 70px;
+}
+
+#engine_mashup fieldset:before {
+  background-image: url("/files/selloo.png");
+  background-repeat: no-repeat;
+  background-position: 0 11px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 16px;
+  left: 27px;
+  padding: 10px 0 10px 39px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 17px;
+  width: 120px;
+}
+
+html[lang="es"] #engine_mashup fieldset:before {
+  content: "Mejor precio garantizado";
+}
+
+html[lang="en"] #engine_mashup fieldset:before {
+  content: "Best price guaranteed";
+}
+
+.engine_mashup > div .text-before {
+  background: none repeat scroll 0 0 #8f7f6a;
+  margin-bottom: 0;
+}
+
+#main .list-advantages {
+  margin: 0;
+  padding: 0 0 0 30px;
+}
+
+.list-advantages li {
+  display: inline-block;
+}
+
+.list-advantages li h3 {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.list-advantages li.check {
+  background-image: url("/files/check.png");
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 16px;
+  margin-left: 3%;
+  padding-left: 20px;
+}
+
+.engine_mashup.inline > div form {
+  background: #000;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+  padding: 19px 0 10px;
+  position: relative;
+  text-align: center;
+}
+
+.engine_mashup > div form .control-group input[type="text"] {
+  border-radius: 0 !important;
+  display: inline-block;
+  height: 30px;
+}
+
+.engine_mashup > div form .control-group select {
+  border-radius: 0;
+  height: 36px;
+  padding: 3px 4px;
+  text-align: center;
+  width: 60px !important;
+}
+
+.engine_mashup > div form .control-group label {
+  color: #fff;
+  font-size: 15px;
+  line-height: 23px;
+  margin: -13px 5px 0 0 !important;
+}
+
+.affix {
+    position: fixed;
+    top: 144px;
+    z-index: 15;
+}
+
+.engine_mashup > div {
+  width: 960px !important;
+}
+
+/* submit buttons (engine mashup, form, blog...) */
+.engine_mashup > div form .button-group input[type="submit"], .mapa .formRuta input.calculaRuta, #mirai_be7 input, #respond .form-submit #submit, .wpcf7 .wpcf7-form input.wpcf7-submit, .offers-listing-wrapper .offer .offer-button, .offers-detail-wrapper .offer-calendar-wrapper .offer-button, .bookingstep1 #motor_reservas #mirai_bookentrance #mirai_be7 input {
+	background: none repeat scroll 0 0 #c79228;
+    box-shadow: 0 0;
+    color: #fff;
+    text-shadow: 0 0;
+    border: 0 none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.engine_mashup > div form .button-group input[type="submit"]:hover, .mapa .formRuta input.calculaRuta:hover, #mirai_be7 input:hover, #respond .form-submit #submit:hover, .wpcf7 .wpcf7-form input.wpcf7-submit:hover, .offers-listing-wrapper .offer .offer-button:hover, .offers-detail-wrapper .offer-calendar-wrapper .offer-button:hover, .bookingstep1 #motor_reservas #mirai_bookentrance #mirai_be7 input:hover {
+    background: none repeat scroll 0 0 #8E691D;
+    text-decoration: none;
+}
+
+/* only engine mashup button */ 
+.engine_mashup > div form .button-group input[type="submit"] {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 6px 0 0 10px !important;
+  padding: 11px 20px;
+  text-transform: uppercase;
+}
+
+.engine_mashup > div form .button-group input[type=submit]:hover {}
+/* ----- */
+
+.engine_mashup > div form .button-group .icon-lock {
+	/*background-image: url("/wp-content/themes/mirai/img/glyphicons-halflings-white.png");*/
+    margin: 3px 2px 0 0;
+}
+
+.engine_mashup > div form .button-group .tracking-link {}
+
+/* square two-columns (column-width)*/
+.engine_mashup.square.two-columns > div form .control-group label {
+    width: 35%;
+}
+
+.engine_mashup.square.two-columns > div form .control-group span.legend {
+    margin-left: 35%;
+}
+
+.engine_mashup.square.two-columns > div form .control-group input[type="text"] {
+    width: 56%;
+}
+.engine_mashup > div form .control-group span.help-inline {
+  display: none !important;
+}
+
+/*--  motor calendar --*/
+#ui-datepicker-div {
+    font-size: 14px !important;
+}
+
+/* BOOKING */
+.bookingstep1 #motor_reservas #mirai_bookentrance {
+  background: #000;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+  color: #fff;
+  margin: 14px 0 0;
+  padding: 13px 0;
+}
+
+.bookingstep1 #motor_reservas #mirai_roomSelectionContainer {
+  box-shadow: 0 0 !important;
+}
+
+#mirai_be7 input {
+  font-size: 15px !important;
+  font-weight: 700;
+  margin: 6px 0 0 10px !important;
+  padding: 11px 20px;
+  text-transform: uppercase;
+}
+
+.bookingstep1 ul#menu_web {
+  display: block !important;
+  margin-top: 13px;
+  padding-bottom: 0;
+  text-align: center;
+  width: auto;
+}
+
+.bookingstep1 header .content > * {
+  display: block !important;
+}
+.bookingstep1 #menu_phone, .bookingstep1 #header #social-media {
+  display: none !important;
+}
+
+.bookingstep1 ul#menu_web > li {
+  display: inline-block;
+  margin: 10px 1% 0;
+  position: relative;
+}
+
+.bookingstep1 ul#menu_web li a {
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bookingstep1 #mirai_be2, .bookingstep1 #mirai_be4, .bookingstep1 #mirai_be6 {
+  background-color: #fffffe;
+  border: 0 none;
+  border-radius: 0;
+  color: #444;
+  padding: 5px !important;
+}
+
+.bookingstep1 ul li {
+  list-style: none;
+}
+
+/* REVIEWS MASHUP */
+.mirai_opiniones > p {
+    display: none;
+} /* link hotelsearch.com */
+
+
+/* SOCIAL MEDIA */
+#header #social-media {
+  float: right;
+  margin: 14px 0 0;
+  width: auto;
+}
+
+#footer #social-media {
+  border-bottom: 1px solid #fff;
+  float: none;
+  margin: 0 auto;
+  padding: 20px 0 30px;
+  text-align: center;
+  width: 360px;
+}
+
+#social-media ul li {
+    display: inline-block;
+    text-align: left;
+}
+
+#social-media ul li a {
+    /* New Social Media icons in COLOR and hover in COLOR */
+    background-image: url('../mirai/images/sprite_color.png');
+
+    /* New Social Media icons in COLOR and hover in GREY */
+    /*background-image: url('../mirai/images/sprite_grey.png');*/
+}
+
+/* Social Media Extra 1 */
+#social-media ul li .extra1_link {
+  background-image: url("/files/blogger.png");
+  background-position: 0 0;
+}
+#social-media ul li .extra1_link:hover {}
+/* Social Media Extra 2 */
+#social-media ul li .extra2_link {
+    background-image: url();
+    background-position: 0 0;
+}
+#social-media ul li .extra2_link:hover {}
+/* Social Media Extra 3 */
+#social-media ul li .extra3_link {
+    background-image: url();
+    background-position: 0 0;
+}
+#social-media ul li .extra3_link:hover {}
+
+
+/*------------------------------  BACK TOP ---------------------------------*/
+
+#back-top, .box-offers .hotel-offers h4 a, #hotels .hotel-offers h4 a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#back-top {
+    background: url("http://ricehotelesburgos2014.webs3.mirai.es/files/back_top.png") no-repeat center -71px #AB9A5E;
+    border-radius: 30px 0 0 30px;
+    -webkit-border-radius: 30px 0 0 30px;
+    bottom: 100px;
+    color: #fff;
+    display: none;
+    height: 50px;
+    opacity: 0.8;
+    padding: 5px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    width: 60px;
+    z-index: 5;
+}
+#back-top:hover {
+    opacity:1;
+}
+
+/* FULLSCREEN SLIDESHOW */
+#sidebar-preheader .ngg-singlepic{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding: 0!important;
+    z-index: -1!important;
+}
+
+/* BACKGROUND SLIDESHOW */
+.background-slideshow .prev, .background-slideshow .next, .container .on-page-slideshow .prev, .container .on-page-slideshow .next {
+  background: url("http://hotelricepalaciodelosblasones2014.webs3.mirai.es/files/sprite_arrows.png") no-repeat scroll 0 0 transparent;
+  height: 50px;
+  text-indent: -9999px;
+  width: 50px;
+}
+
+#dinner-dance .on-page-slideshow .slider, #dinner-dance .on-page-slideshow > div .contSlideshow img {
+  height: 616px !important;
+}
+
+#dinner-dance .on-page-slideshow .prev {
+  background-position: 0 -50px !important;
+  left: 10px;
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+}
+
+/*---------------------------------------------------------------------------*/
+/*------------------------------ CONTENT ELEMENTS ---------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/* GOOGLE MAPS */
+.mapa {
+    margin: 10px 0;
+}
+
+.mapa .map_canvas {
+    margin-bottom: 10px;
+    width: 100% !important;
+}
+
+.mapa .formRuta input {
+    margin-right: 10px;
+}
+
+.mapa .alert, .adp-warnbox {
+    color: #000;
+    margin-top: 20px;
+}
+.mapa .ruta {
+    width: 100% !important;
+}
+
+
+/* CAROUSEL SLIDESHOW */
+.on-page-slideshow div[class*="pager"] {
+    z-index: 50;
+}
+
+.on-page-slideshow .slider, .on-page-slideshow > div .contSlideshow img {
+    height: 637px !important;
+    width: 100% !important;
+}
+
+.on-page-slideshow div[class*="pager"] a {
+  background: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  display: inline-block;
+  height: 30px;
+  margin: 0 5px;
+  text-indent: -99999px;
+  width: 30px;
+}
+
+.on-page-slideshow div[class*="pager"] a:hover, .on-page-slideshow div[class*="pager"] a.activeSlide {
+  background: #71A0DD;
+}
+
+.on-page-slideshow div[class*="pager"] {
+  bottom: 0;
+  padding: 10px 0;
+  text-align: center;
+  top: auto;
+  width: 100%;
+  z-index: 12;
+}
+
+
+
+
+/*---------------------------------- SHADOWBOX ---------------------------------*/
+#sb-container {z-index: 1050 !important;}
+#sb-container #sb-overlay {background-color:#000 !important;}
+#sb-container #sb-wrapper #sb-wrapper-inner {border: 1px solid #303030 !important;}
+#sb-container #sb-info {}
+#sb-container #sb-info #sb-counter {}
+#sb-container #sb-info #sb-nav {}
+#sb-container #sb-info #sb-nav #sb-nav-close {}
+#sb-container #sb-info #sb-nav #sb-nav-next {}
+#sb-container #sb-info #sb-nav #sb-nav-previous {}
+/*------------------------------------------------------------------------------*/
+
+/*******************************************************/
+/* New style prev, next and close Shadowbox */
+/*******************************************************/
+
+/* ¡¡¡CUIDADO!!! LAS VISITA VIRTUALES NO FUNCIONAN CON ESTOS ESTILOS */
+/* DESCOMENTAR PARA UTILIZAR */
+
+#sb-container #sb-info {
+    height: 97.5%;
+    left: 0;
+    margin-top: 27px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+#sb-container #sb-info #sb-counter {
+    bottom: 10px;
+    font-size: 15px;
+    left: 10px;
+    position: absolute;
+}
+
+#sb-container #sb-info #sb-nav {width: 100%;}
+
+#sb-nav a {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-position: center center !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute !important;
+    right: 0 !important;
+    width: 30% !important;
+}
+
+
+
+#sb-container #sb-info #sb-nav #sb-nav-close {
+    background-color: #333333;
+    background-image: url("../mirai/images/closed.png") !important;
+    bottom: auto !important;
+    height: 16px !important;
+    padding: 15px !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 16px !important;
+    z-index: 1 !important;
+}
+
+#sb-container #sb-info #sb-nav #sb-nav-previous {
+    background-position: 5% center !important;
+    background-image: url("../mirai/images/arrow-left.png") !important;
+    left: 0 !important;
+}
+
+#sb-container #sb-info #sb-nav #sb-nav-next {
+    background-position: 95% center !important;
+    background-image: url("../mirai/images/arrow-right.png") !important;
+}
+
+#sb-container #sb-info #sb-nav #sb-nav-previous:hover {
+    background-position: 1% center !important;
+
+}
+
+#sb-container #sb-info #sb-nav #sb-nav-next:hover {
+    background-position: 99% center !important;
+}
+
+.ie8 #sb-nav a {
+    height: 40px !important;
+    top: 50% !important;
+    width: 40px !important;
+}
+
+
+/*******************************************************/
+/*******************************************************/
+
+/*---------------------------------------------------------------------------*/
+/*-------------------------------- MEDIA QUERYS -----------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+    .offers-mashup {
+      top: 80px;
+    }
+    
+    #engine_mashup {
+        margin: -123px 0 0;
+    }
+    
+    #engine_mashup fieldset {
+      padding: 0 0 0 50px;
+    }
+    
+    .on-page-slideshow .slider, .on-page-slideshow > div .contSlideshow img {
+      height: 796px !important;
+    }
+
+    .affix {
+      top: 123px;
+    }
+
+    #engine_mashup fieldset {
+      padding: 0 0 0 280px;
+    }
+
+    #engine_mashup fieldset:before {
+      background: url("/files/selloo.png") no-repeat scroll 0 2px rgba(0, 0, 0, 0);
+      width: auto;
+    }
+
+    #location-home {
+      height: 600px;
+    }
+
+    .corner {
+      color: #fff;
+      padding: 10px 0;
+      position: absolute;
+      right: -38px;
+      top: 3px;
+      transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+      -webkit-transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+      -moz-transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+      -o-transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+      -ms-transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+      width: 160px;
+      z-index: 10;
+    }
+
+    .engine_mashup > div {
+      width: 1200px !important;
+    }
+
+
+
+
+}/* ipad portrait - landscape */
+@media (min-device-width: 768px) and (max-device-width: 979px){}
+
+/* customize ipad portrait */
+@media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : portrait) {
+    
+    .bookingstep1 #mirai_roomSelectionContainer {
+        width: 98%;
+    }
+    
+    .bookingstep1 #header .content {
+        width: 100%;
+    }
+    
+    ul#menu_web li a {
+	    font-size: 15px;
+    }
+    
+    #engine_mashup fieldset:before, .corner {
+      display: none;
+    }
+        
+    .list-advantages li.check {
+        font-size: 12px;
+        margin-left: 2%;
+    }
+    
+    .list-advantages li h3 {
+    	font-size: 16px;
+    }
+    
+    #engine_mashup {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .affix, .engine_mashup {
+      margin: 0;
+    }
+    
+    .engine_mashup>div {
+  	  width: 743px!important;
+    }
+    
+    #presentation-home .mrg1 {
+ 	   margin-top: 0 !important;
+    }
+    
+    .mapa .formRuta input.calculaRuta {
+        font-size: 10px !important;
+        margin: 0 0 0 3px;
+    }
+    
+}/* customize ipad landscape */
+@media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : landscape) {}
+
+/*------------------------------------------------------------------------------*/

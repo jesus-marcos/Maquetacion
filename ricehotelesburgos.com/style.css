@@ -38,6 +38,16 @@ Author: Mirai Espana
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('/wp-content/themes/hotel_rice_palacio_de_los_blasones_2014/images/Gotham-Light.eot');
+    src: url('/wp-content/themes/hotel_rice_palacio_de_los_blasones_2014/images/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/hotel_rice_palacio_de_los_blasones_2014/images/Gotham-Light.woff') format('woff'),
+         url('/wp-content/themes/hotel_rice_palacio_de_los_blasones_2014/images/Gotham-Light.ttf') format('truetype'),
+         url('/wp-content/themes/hotel_rice_palacio_de_los_blasones_2014/images/Gotham-Light.svg#Gotham-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {font-family: GothamNarrow-Light; font-size: 15px;}
 strong, #cookies-wrapper-content h1 {
@@ -146,7 +156,9 @@ p.subtitle-h2 {
   width: 280px;
 }
 #logo a span:hover, .bookingstep1 #logo a span:hover {text-decoration: none !important; cursor: default;}
-
+#logo {
+  padding-top: 27px;
+}
 /*------------------------------------------------------------------------------*/
 
 
@@ -579,6 +591,22 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 .align-center {text-align: center;}
 .align-right {text-align: right;}
 
+.hotelschema .tel {
+  color: #ab9a5e;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari only override */
+    
+    .box-photos .carousel .carousel-control, #myCarousel1 .carousel-control {
+        line-height: 28px;
+    } 
+    
+    ::i-block-chrome, .box-photos .carousel .carousel-control, ::i-block-chrome, #myCarousel1 .carousel-control {
+        line-height: 28px;
+    } 
+}
 
 /* POLITICA DE COOKIES */
 
@@ -599,8 +627,12 @@ div.hssurveys_full {padding: 2%; width: 96%;}
 }
 #cookies-wrapper-content ul li a:hover {color: #333;}
 
-#cookies-alert-wrapper .link {color: #333;}
-
+#cookies-alert-wrapper .link {
+  display: inline-block;
+  line-height: normal;
+  margin: 10px !important;
+  width: auto;
+}
 
 /*---------------------------  BACKGROUND SLIDESHOW ----------------------------*/
 
@@ -652,13 +684,14 @@ div.hssurveys_full {padding: 2%; width: 96%;}
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 3.3em;
   line-height: 60px;
-  margin-left: 8%;
   padding: 12px 35px;
+  font-family: Gotham-Light !important;
 }
 
 .background-slideshow .txtslider .subtitle {
   background-color: rgb(171, 154, 94);
   background-color: rgba(171, 154, 94, 0.7);
+    font-family: Gotham-Light !important;
   float: right;
   font-size: 1.6em;
   margin: 10px 4% 0 0;
@@ -1097,8 +1130,7 @@ div.wpcf7-response-output {
 #services h3 {margin-top: 0!important;}
 
 #weddings > div {
-  height: 350px;
-  padding-top: 24px;
+  height: 290px;
   position: relative;
 }
 
@@ -1258,6 +1290,21 @@ div.wpcf7-response-output {
     width: 30px;
 }
 
+#spaces .span4 {
+  height: 350px;
+  position: relative;
+}
+#spaces .span4 img {
+  margin-bottom: 10px;
+}
+#spaces .span4 a {
+  bottom: 0;
+  color: #ab9a5e;
+  position: absolute;
+}
+#spaces .span4 a:hover {
+  color: #999;
+}
 
 /*------------------------------  BACK TOP ---------------------------------*/
 
@@ -1341,13 +1388,32 @@ div#mirai_chainHotelsContainer {width: 1200px;}
   margin-left: -600px;
   width: 1200px;
 }
-
+#weddings > div {
+  height: 354px;
+  position: relative;
+}
 
 
 }/* ipad portrait - landscape */
-@media (min-device-width: 768px) and (max-device-width: 979px){}
+@media (min-device-width: 768px) and (max-device-width: 979px){
 
-/* customize ipad portrait */
+
+    .background-slideshow {top: 114px;}
+    .engine_mashup {margin-top: 5px;}
+
+    @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+        /* Retina-specific stuff here */
+    
+    
+        .background-slideshow {top: 200px;}
+        .engine_mashup {margin-top: 35px;}
+    }
+
+
+
+}/* customize ipad portrait */
 @media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : portrait) {
     
     
@@ -1376,7 +1442,16 @@ div#mirai_chainHotelsContainer {width: 1200px;}
     .bookingstep1 header #logo {padding-top: 60px; margin: 0 0 0 10px;}
     .bookingstep1 ul#menu_web {padding-top: 70px; margin: 0 20px 0 0 !important;}
         
-        
+     @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+        /* Retina-specific stuff here */
+    
+    
+        .background-slideshow {top: 170px;}
+        .engine_mashup {margin-top: 5px;}
+    }
+
 }/* customize ipad landscape */
 @media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : landscape) {
 
